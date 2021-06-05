@@ -1,7 +1,6 @@
 # emby-apple-trailers.py
 
-The purpose of this script is to build a local movie trailers library for Emby using the Apple Trailers RSS feed. Using the RSS feed and youtube-dl it builds strm files containing the link to the direct video. 
-
+The purpose of this script is to build a local movie trailers library for Emby using the Apple Trailers RSS feed. Using the RSS feed and youtube-dl it builds strm files containing the link to the direct video.  
 
 ## Prerequisites
 
@@ -35,18 +34,23 @@ Ubuntu Linux using cron:
 
 ## Emby Setup
 
-Add a new library
+### Add a new library
 - Content Type = Movies
 - Display Name = Trailers
 - Add the Trailers directory
 - Scroll down, click Save
 
-Cinema Intro Settings
+### Cinema Intro Settings
 - Under "Enable Cinema Intros" - select Movies
 - Select "Include trailers from movies in my library"
 - Uncheck "Enable smart parental control"
 - Scroll down, click Save
 
-Emby Client App
-- Under Settings -- Playback
+### Emby Client App
+- Under Settings --> Playback
 - Make sure "Enable Cinema Intros" is selected.
+
+## TODO
+- Cleanup of old trailers
+- Allow command-line arguments for settings
+
